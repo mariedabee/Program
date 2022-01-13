@@ -58,7 +58,7 @@ public class Management {
         //Keyboard records the data required by the student object, displays prompts, prompts for what information to enter
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter a student number:");
-        String sid = in.nextLine();
+        int sid = Integer.parseInt(in.nextLine());
         System.out.println("Please enter the student name:");
         String name = in.nextLine();
         System.out.println("Please enter the student age:");
@@ -102,12 +102,12 @@ public class Management {
         //Use the keyboard to enter the deleted student number and prompt for information
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter the student number you want to delete:");
-        String sid = in.nextLine();//Accept data entered by keyboard
+        int sid = Integer.parseInt(in.nextLine());//Accept data entered by keyboard
 
         //Traversing a collection loop matching student numbers will delete corresponding students from the collection
         for(int i=0;i<array.size();i++){
             Student s = array.get(i);//The loop matches one data at a time until it matches the number we entered and then deletes, which is equivalent to scanning
-            if(s.getId().equals(sid)){
+            if(s.getId() == sid){
                 array.remove(i);
                 break;//Stop matching when found
             }
@@ -123,7 +123,7 @@ public class Management {
         //Use the keyboard to enter the modified student number and prompt for information
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter the student number to be modified:");
-        String sid = in.nextLine();//Accept data entered by keyboard
+        int sid = Integer.parseInt(in.nextLine());//Accept data entered by keyboard
 
         //Keyboard entry of student information to be modified
         System.out.println("Please enter the new name of the student:");
@@ -143,7 +143,7 @@ public class Management {
         //Traversing a collection loop matching student numbers will modify the corresponding students from the collection
         for(int i=0;i<array.size();i++){
             Student student = array.get(i);//The loop matches one data at a time until it matches the number we entered and then modifies it, which is equivalent to scanning
-            if(student.getId().equals(sid)){
+            if(student.getId()== sid){
                 array.set(i,s);//Delete the specified location to insert the specified element
                 break;//Stop matching when found
             }

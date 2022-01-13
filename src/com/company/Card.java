@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.HashMap;
-import java.util.Map;
-
 // A Java program to demonstrate working of
 // Prototype Design Pattern with example
 // of a " Cards types in a school management system" class to store existing objects.

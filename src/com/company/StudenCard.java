@@ -3,15 +3,15 @@ package com.company;
 public class StudenCard extends Card {
 
     private int id;
-    private String name;
-    public StudenCard(String name, int cardno)
+    private String student =  new Student().getName();
+    public StudenCard(String student, int cardno)
         {
             System.out.println("   Student cards Records  ");
             System.out.println("---------------------------------------------");
-            System.out.println("Name: "+ name+"\t"+"Card Number: "+ cardno);
+            System.out.println("student: "+ student+"\t"+"Card Number: "+ cardno);
 
             this.id=cardno;
-            this.name=name;
+            this.student=student;
             Cardtype= "student";
         }
 
@@ -24,11 +24,11 @@ public class StudenCard extends Card {
     @Override
     public Card getClone() {
 
-        return new StudenCard(name, id);
+        return new StudenCard(student, id);
     }
     public void showRecord(){
 
-        System.out.println(id+"\t"+name+"\t");
+        System.out.println(id+"\t"+student+"\t");
     }
 }
 

@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Student {
-        private String id;
+        private int id;
         private String fullName;
         private String age;
         private String address;
 
         public Student(){}
 
-        public Student(String sid, String fullName, String age, String address) {
+        public Student(int sid, String fullName, String age, String address) {
             this.id = sid;
             this.fullName = fullName;
             this.age = age;
             this.address = address;
         }
 
-        public String getId() {
+        public int getId() {
             return id;
         }
 
@@ -34,7 +34,7 @@ public class Student {
             return address;
         }
 
-        public void setSid(String sid) {
+        public void setSid(int sid) {
             this.id = sid;
         }
 
@@ -49,6 +49,7 @@ public class Student {
         public void setAddress(String address) {
             this.address = address;
         }
+
 
 
 }

@@ -7,9 +7,12 @@ public class CardsStore {
 
         private static Map<String, Card> cardMap = new HashMap<String, Card>();
 
+
         static
         {
-            cardMap.put("student", new StudenCard("marie dabee", 6784));
+            Student student=new Student(23432,"anna hal", "25" ,"bremen");
+            String name =  student.getName();
+            cardMap.put("student", new StudenCard(name , 6784));
             cardMap.put("teacher", new TeacherCard("tom hase", 2322));
         }
 
