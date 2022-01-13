@@ -2,6 +2,15 @@ package com.company;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+
+  CardsStore:
+ we import the HashMap class, then Create a HashMap object "cardMap" that will store "<String, Card>" keys and values. then Add keys and values using "cardMap.put(type, card)".
+ we create an object from "student" class that has "id, fullName, age, address" as variables with getters and setters, and we set value.
+ in the "Card getCardType" method, we return the cardtype, the values that were saved in the hashmap and then clone it.
+
+ * */
+
 public class CardsStore {
         private static Map<String, Card> cardMap = new HashMap<String, Card>();
 
