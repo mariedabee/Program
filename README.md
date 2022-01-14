@@ -1,5 +1,6 @@
 
-Prototype Design Pattern (crational pattern), Code explanation:
+Creational design pattern: 
+Prototype Design Pattern, Code explanation:
 1. Card, StudentCard, TeacherCard:
    Abstract class Card (parent class): this class represents the prototype for this pattern.
    The "StudentCard", and "TeacherCard" represent the Prototype registry of this pattern. They  are subclasses that can access the parent "Card" class with its protected attribute "Cardtype", each subclass will set a value to the cardtype: Cardtype= "student" or "teacher" .
@@ -16,4 +17,10 @@ Prototype Design Pattern (crational pattern), Code explanation:
    student object and the values for its variables will be entered by the user (setters).
    we then create a studentcard with values that were entered by the user "student.getName(), student.getId()", we call "showRecord" method to check if it was successful.
    next we clone the card with the entered data and save it in a new variable "s2". at the end we create a teachercard to test it as well with "showRecord".
-
+----------------------------------------------
+structural design pattern
+Facade pattern: i implemented the pattern to a school's cantine registery, the user will choose in the console what to order, and depending on that it, the program will print the price and item number. 
+1. Created a CashRegister interface with 2 methods that return the purchased article number and its price.
+2. Create a sandwiches, drinks, warmMeals implementation classes that will implement CashRegister interface, and define prices and item numbers.
+3. Create a RegisterKeeper concrete class that will use CashRegister interface.
+4. Create a client that can purchase the items from CashRegister through RegisterKeeper.
