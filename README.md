@@ -19,8 +19,14 @@ Prototype Design Pattern, Code explanation:
    next we clone the card with the entered data and save it in a new variable "s2". at the end we create a teachercard to test it as well with "showRecord".
 ----------------------------------------------
 structural design pattern
-Facade pattern: i implemented the pattern to a school's cantine registery, the user will choose in the console what to order, and depending on that it, the program will print the price and item number. 
-1. Created a CashRegister interface with 2 methods that return the purchased article number and its price.
-2. Create a sandwiches, drinks, warmMeals implementation classes that will implement CashRegister interface, and define prices and item numbers.
-3. Create a RegisterKeeper concrete class that will use CashRegister interface.
-4. Create a client that can purchase the items from CashRegister through RegisterKeeper.
+Facade pattern
+I implemented the pattern to a school's cantine registery, the user will choose in the console what to order, and depending on that it, the program will print the price and item number.
+1.Created a “CashRegister” interface, with 2 methods that return the purchased article number and its price.
+This class represents “facade” for this pattern.
+2.Created a "sandwiches, drinks, warmMeals”  implementation classes that will implement “CashRegister” interface, and define prices and item numbers.
+These classes represents “subclasses” for this pattern.
+3.Created a “RegisterKeeper” concrete class that will use “CashRegister” interface.
+RegisterKeeper class uses the concrete classes to delegate user calls to these classes. “FacadePatternClient”, our demo class, will use “RegisterKeeper” class to show the results.
+4.Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper.
+This class represents the “client” for this pattern.
+
