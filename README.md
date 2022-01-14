@@ -21,12 +21,16 @@ Prototype Design Pattern, Code explanation:
 structural design pattern
 Facade pattern
 I implemented the pattern to a school's cantine registery, the user will choose in the console what to order, and depending on that it, the program will print the price and item number.
-1.Created a “CashRegister” interface, with 2 methods that return the purchased article number and its price.
+1.CashRegister:
+Created a “CashRegister” interface, with 2 methods that return the purchased article number and its price.
 This class represents “facade” for this pattern.
-2.Created a "sandwiches, drinks, warmMeals”  implementation classes that will implement “CashRegister” interface, and define prices and item numbers.
+2. sandwiches, drinks, warmMeals:
+Created a "sandwiches, drinks, warmMeals”  implementation classes that will implement “CashRegister” interface, and define prices and item numbers.
 These classes represents “subclasses” for this pattern.
-3.Created a “RegisterKeeper” concrete class that will use “CashRegister” interface.
+3. RegisterKeeper:
+Created a “RegisterKeeper” concrete class that will use “CashRegister” interface.
 RegisterKeeper class uses the concrete classes to delegate user calls to these classes. “FacadePatternClient”, our demo class, will use “RegisterKeeper” class to show the results.
-4.Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper.
+4. FacadePatternClient:
+Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper.
 This class represents the “client” for this pattern.
 
