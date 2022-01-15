@@ -33,4 +33,19 @@ RegisterKeeper class uses the concrete classes to delegate user calls to these c
 4. FacadePatternClient:
 Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper.
 This class represents the “client” for this pattern.
+----------------------------------------------
+
+behavioural design pattern:
+Strategy Design Pattern, Code explanation:
+1. Strategy:
+    I created a new package "Management", a new interface "Strategy" that will manage “Courses” . The program will allow you to update/add/delete courses.
+2. Course:
+   “Course” class has “courseName, teacher, noOfStudents” as variables with getters setters, and “addStudent(Student newStudent)” that will allow you to add a new student to a specific course. (In order to use the student class we import it “import com.company.Student;”).
+3. AddCourse, UpdateCourse, DeleteCourse:
+   Created a “AddCourse, UpdateCourse, DeleteCourse” classes that will implement “Strategy” interface, and give logic to the method “ManageCourses(String courseName, int courseID)”.
+4. Context:
+   Created a “Context” class that will ask from “Strategy” interface to execute the type of strategy.
+5. StrategyPatternDemo:
+   the tester for our program, it will set the course variables based on the user’s input. We then create a new context with the following classes “AddCourse, UpdateCourse, DeleteCourse”.
+   context = new Context(new UpdateCourse(course, noOfStudents, courseName, student));
 
