@@ -3,15 +3,18 @@ package InternationalStudents;
 import com.company.Student;
 
 public class Dutch implements Students{
-    Student student = new Student();
-    String studentName =  student.getName();
+    Student student ;
+    String studentName ;
+
+    public Dutch(){}
+    public Dutch(String name){
+        studentName = student.getName();
+        this.studentName = name;
+    }
 
     @Override
-    public void add(String Student) {
-        this.studentName = Student;
-        System.out.println("First student" + student.toString() + "was successfully added! \n" );
-
-
-
+    public void add(String studentName) {
+        this.studentName = studentName;
+        System.out.println(" student : " + studentName + " was successfully added as a DUTCH student! \n" );
     }
 }

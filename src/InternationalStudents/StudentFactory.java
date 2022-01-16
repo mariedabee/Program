@@ -4,7 +4,7 @@ import com.company.Student;
 
 public class StudentFactory {
 
-    //use getShape method to get object of type shape
+    //use getStudent method to get object of type students
     public Students getStudent(String studentType){
         if(studentType == null){
             return null;
