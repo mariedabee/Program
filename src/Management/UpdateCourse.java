@@ -24,7 +24,7 @@ public class UpdateCourse implements Strategy{
         course.addStudent(newStudent);
         String messagestudent = "student : " +newStudent.toString()+ " was successfully added to the course " + courseName +"\n";
         String message = "course with name: " +courseName + " and id : "+ course.getCourseID() + " was successfully updated! \n";
-        String message2 = " new Number of Students for this course:  "+ course.getNoOfStudents()+ "\n";
+        String message2 = " new Number of InternationalStudents.Students for this course:  "+ course.getNoOfStudents()+ "\n";
         return messagestudent+ message + message2;
     }
 }

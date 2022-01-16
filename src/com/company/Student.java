@@ -50,6 +50,9 @@ public class Student {
             this.address = address;
         }
 
-
+        public String toString(){
+            String s = " student name : " + getName() + " student id : " + getId() + " student age : " + getAge() + " student address : " + getAddress() ;
+            return s;
+        }
 
 }

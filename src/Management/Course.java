@@ -62,7 +62,7 @@ public class Course {
 
         public String toString() {
             return "Course Name: \n" + this.courseName + " Teacher: \n" + this.teacher
-                    + " Number of Students: \n" + this.noOfStudents;
+                    + " Number of InternationalStudents.Students: \n" + this.noOfStudents;
         }
 
 }
