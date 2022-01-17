@@ -51,9 +51,9 @@ Created a “RegisterKeeper” concrete class that will use “CashRegister” i
 RegisterKeeper class uses the concrete classes to delegate user calls to these classes. “FacadePatternClient”, our demo class, will use “RegisterKeeper” class to show the results.
 
       1.4 FacadePatternClient:
+      
+Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper. This class represents the “client” for this pattern.
 
-Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper.
-This class represents the “client” for this pattern.
 ----------------------------------------------
 ### C. Behavioural design pattern:
 ####  1. Facade pattern
