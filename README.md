@@ -1,6 +1,6 @@
 
-Creational design pattern: 
-Prototype Design Pattern, Code explanation:
+#Creational design pattern: 
+##Prototype Design Pattern, Code explanation:
 1. Card, StudentCard, TeacherCard:
    Abstract class Card (parent class): this class represents the prototype for this pattern.
    The "StudentCard", and "TeacherCard" represent the Prototype registry of this pattern. They  are subclasses that can access the parent "Card" class with its protected attribute "Cardtype", each subclass will set a value to the cardtype: Cardtype= "student" or "teacher" .
@@ -17,6 +17,20 @@ Prototype Design Pattern, Code explanation:
    student object and the values for its variables will be entered by the user (setters).
    we then create a studentcard with values that were entered by the user "student.getName(), student.getId()", we call "showRecord" method to check if it was successful.
    next we clone the card with the entered data and save it in a new variable "s2". at the end we create a teachercard to test it as well with "showRecord".
+
+##Factory Design pattern
+1. A factory design pattern is often implemented by defining an interface.
+   Then, based of said interface, child classes, also known as sub classes, are created. 
+   The child classes have the possibility to alter and override the types of the interface. 
+2. The main use of the Factory design pattern is, when you want to have the possibility to easily add and remove instantiations of the main class, without having to alter the entire code base.
+3. **Students**\
+   This interface serves as the base for the several student sub classes.\
+   **Dutch, Exchange, International**\
+   The three different student types that exist.\
+   **FactoryPatternDemo**\
+   This class constructs the final product. It gathers the available information about the students from the different classes and creates the student.\
+   **StudentFactory**\
+   This class checks if the student type is Dutch, international or exchange based on the input. Then, based on the input, it returns the right student class. If it's none of the three, it returs null.
 ----------------------------------------------
 structural design pattern
 Facade pattern
@@ -48,4 +62,6 @@ Strategy Design Pattern, Code explanation:
 5. StrategyPatternDemo:
    the tester for our program, it will set the course variables based on the user’s input. We then create a new context with the following classes “AddCourse, UpdateCourse, DeleteCourse”.
    context = new Context(new UpdateCourse(course, noOfStudents, courseName, student));
+---------------------------------------------- 
+
 
