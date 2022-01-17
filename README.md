@@ -4,7 +4,7 @@
 
 
 
-###A. Creational design patterns:
+### A. Creational design patterns:
  ####  1. Prototype Design Pattern, Code explanation:
       1.1 Card, StudentCard, TeacherCard:
 
@@ -31,7 +31,7 @@ it represents the client in this pattern.
 
 ----------------------------------------------
 
-###B. structural design pattern
+### B. structural design pattern
 ####  1. Facade pattern
 I implemented the pattern to a school's cantine registery, the user will choose in the console what to order, and depending on that it, the program will print the price and item number.
 
@@ -55,7 +55,7 @@ RegisterKeeper class uses the concrete classes to delegate user calls to these c
 Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper.
 This class represents the “client” for this pattern.
 ----------------------------------------------
-###C. Behavioural design pattern:
+### C. Behavioural design pattern:
 ####  1. Facade pattern
 
       1.1 Strategy:
