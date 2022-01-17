@@ -29,6 +29,28 @@ it represents the client in this pattern.
    we then create a studentcard with values that were entered by the user "student.getName(), student.getId()", we call "showRecord" method to check if it was successful.
    next we clone the card with the entered data and save it in a new variable "s2". at the end we create a teachercard to test it as well with "showRecord".
 
+
+ ####  2. Factory design pattern:
+A factory design pattern is often implemented by defining an interface. Then, based on said interface, child(sub) classes are created. The child classes have the possibility to alter and override the types of the interface.
+Uses
+The main use of the factory design pattern, is when you want to have the possibility to easily add and remove instantiations of the main class, without having to alter the entire code base.
+
+      2.1. Students:
+
+This interface serves as the base for the several student sub classes.
+
+     2.2. Dutch, Exchange, International:
+
+The three different students that exist.
+
+    2.3 FactoryPatternDemo:
+    
+This class constructs the final product. It gathers the available information about the students from the different classes and creates the student.
+    
+    2.4 StudentFactory:
+
+This class checks if the student type is Dutch, international or exchange. Based in the input, it returns the right student class. If it’s none of those three, it returns null.
+
 ----------------------------------------------
 
 ### B. structural design pattern
