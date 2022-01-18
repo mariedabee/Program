@@ -77,15 +77,29 @@ RegisterKeeper class uses the concrete classes to delegate user calls to these c
 Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper. This class represents the “client” for this pattern.
 
 #### 2. Proxy pattern
-For this pattern, I created a small program that loads and displays some text to 
-the terminal. The text is loaded by the proxy.
+For this pattern, I created a small program that checks whether the right teacher
+is trying to add a new grade. There is only one correct teacher that can add a
+new grade, anyone else will be denied access.
 
-      2.1 SchoolMessages:
-This is the interface for this small program. It contains one method. The display() method.
+      2.1 Grade:
+This is the interface for this program. It contains only one method: the add() method. Other classes will
+later add functionality to this method by overriding it. 
 
-      2.2 RealText:
-This class will display the text. It contains two methods. The loadFromDisc() method, and 
-it overrides the display() method from the SchoolMessages interface. The display() method is available to the Proxy
+      2.2 Teacher:
+This is the teacher class. It contains one variable: the 'name' variable. This variable is used to check
+the teacher. It also contains setName() and getName() methods. 
+
+      2.3 RealGrade:
+This class implements the Grade interface and overrides the add() method. In this class, the add() method
+is only accessible to the right teacher. When the right teacher accesses it, it prints a welcome message
+in the terminal. 
+
+      2.4 GradeProxy:
+This class implements the Grade interface and overrides the add() method as well. It has two variables: 
+'teacher' and 'grade'. Within the add() method, it checks whether the name of a teacher grants the teacher
+access. If a teacher's name has access, a welcome message will be displayed in the terminal. If a teacher
+doesn't have access, it displays that in the terminal. 
+
 
 ----------------------------------------------
 ### C. Behavioural design pattern:
