@@ -76,6 +76,17 @@ RegisterKeeper class uses the concrete classes to delegate user calls to these c
       
 Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper. This class represents the “client” for this pattern.
 
+#### 2. Proxy pattern
+For this pattern, I created a small program that loads and displays some text to 
+the terminal. The text is loaded by the proxy.
+
+      2.1 SchoolMessages:
+This is the interface for this small program. It contains one method. The display() method.
+
+      2.2 RealText:
+This class will display the text. It contains two methods. The loadFromDisc() method, and 
+it overrides the display() method from the SchoolMessages interface. The display() method is available to the Proxy
+
 ----------------------------------------------
 ### C. Behavioural design pattern:
 ####  1. Facade pattern
