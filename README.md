@@ -6,7 +6,7 @@
 
 ### A. Creational design patterns:
  ####  1. Prototype Design Pattern, Code explanation:
-![This is an image](/../main/UML/factory.png)
+![This is an image](/../main/UML/Prototype.png)
       1.1 Card, StudentCard, TeacherCard:
 
 Abstract class Card (parent class): this class represents the prototype for this pattern.
@@ -32,6 +32,8 @@ it represents the client in this pattern.
 
 
  ####  2. Factory design pattern:
+![This is an image](/../main/UML/factory.png)
+
 A factory design pattern is often implemented by defining an interface. Then, based on said interface, child(sub) classes are created. The child classes have the possibility to alter and override the types of the interface.
 Uses
 The main use of the factory design pattern, is when you want to have the possibility to easily add and remove instantiations of the main class, without having to alter the entire code base.
@@ -56,6 +58,8 @@ This class checks if the student type is Dutch, international or exchange. Based
 
 ### B. structural design pattern
 ####  1. Facade pattern
+![This is an image](/../main/UML/Facade.png)
+
 I implemented the pattern to a school's cantine registery, the user will choose in the console what to order, and depending on that it, the program will print the price and item number.
 
       1.1 CashRegister:
@@ -78,6 +82,8 @@ RegisterKeeper class uses the concrete classes to delegate user calls to these c
 Created a client “FacadePatternClient” that can purchase the items from CashRegister through RegisterKeeper. This class represents the “client” for this pattern.
 
 #### 2. Proxy pattern
+![This is an image](/../main/UML/proxy.png)
+
 For this pattern, I created a small program that checks whether the right teacher
 is trying to add a new grade. There is only one correct teacher that can add a
 new grade, anyone else will be denied access.
@@ -104,7 +110,9 @@ doesn't have access, it displays that in the terminal.
 
 ----------------------------------------------
 ### C. Behavioural design pattern:
-####  1. Facade pattern
+####  1. Strategy pattern
+![This is an image](/../main/UML/Strategy.png)
+
 
       1.1 Strategy:
 
