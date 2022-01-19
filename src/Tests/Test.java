@@ -6,7 +6,7 @@ public abstract class Test {
     abstract void endTest();
 
     //template method
-    public final void play(){
+    public final void takeTest(){
 
         //start test
         startTest();

@@ -135,3 +135,14 @@ Created a “Context” class that will ask from “Strategy” interface to exe
    the tester for our program, it will set the course variables based on the user’s input. We then create a new context with the following classes “AddCourse, UpdateCourse, DeleteCourse”.
    context = new Context(new UpdateCourse(course, noOfStudents, courseName, student));
 
+####  2. Template Method pattern
+
+      2.1 Test:
+This is the abstract Test class. It contains three methods. The startTest() method to start a test, the endTest() method to end a test. This class also contains the takeTest() method. This is the template method and calls the startTest() and endTest() methods as well. 
+
+      2.2 Mathematics, History:
+These are the two concrete implementations of the Test class. They each represent a different test for a different subject. They each override the startTest() and endTest() methods and add their own content to said method. 
+
+      2.3 TemplatePatternDemo:
+This class contains the main() method. This method creates both a Mathematics and History object and calls the takeTest() method. When this method is called, the concrete classes will print their respective test messages. It starts and ends the test when called.
+
