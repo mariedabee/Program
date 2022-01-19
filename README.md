@@ -136,7 +136,7 @@ Created a “Context” class that will ask from “Strategy” interface to exe
    context = new Context(new UpdateCourse(course, noOfStudents, courseName, student));
 
 ####  2. Template Method pattern
-![This is an image](/../main/UML/Template Method.png)
+![This is an image](/../main/UML/TemplateMethod.png)
 
       2.1 Test:
 This is the abstract Test class. It contains three methods. The startTest() method to start a test, the endTest() method to end a test. This class also contains the takeTest() method. This is the template method and calls the startTest() and endTest() methods as well. 
