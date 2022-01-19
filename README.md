@@ -2,7 +2,7 @@
 ## Design patterns
 ###### Team: Mariam Bari, Boris Kamstra
 
-###Introduction
+### Introduction
 \
 • The readme (README.md) describes  code explanation, cooperation with the other team member.\
 • Team : Mariam Bari, Boris Kamstra.\
