@@ -6,6 +6,7 @@
 
 ### A. Creational design patterns:
  ####  1. Prototype Design Pattern, Code explanation:
+![This is an image](/../main/UML/factory.png)
       1.1 Card, StudentCard, TeacherCard:
 
 Abstract class Card (parent class): this class represents the prototype for this pattern.
