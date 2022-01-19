@@ -2,7 +2,13 @@
 ## Design patterns
 ###### Team: Mariam Bari, Boris Kamstra
 
-
+###Introduction
+• The readme (README.md) describes  code explanation, cooperation with the other team member.\
+• Team : Mariam Bari, Boris Kamstra.\
+• The project was hosted on GitHub, IntelliJ Idea was the tool we used with java language.\
+• Each team member has choose one creational design pattern, one structural design pattern, and one behavioural design pattern.\
+• When we had an issue or were done with our pattern, we had a call on teams and walked the other team member through the implemented pattern.\
+• We also created UML  Class diagrams for each pattern (in read me file under code explanation).
 
 ### A. Creational design patterns:
  ####  1. Prototype Design Pattern, Code explanation:
