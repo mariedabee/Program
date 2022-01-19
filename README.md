@@ -7,6 +7,7 @@
 • The readme (README.md) describes  code explanation, cooperation with the other team member.\
 • Team : Mariam Bari, Boris Kamstra.\
 • The project was hosted on GitHub, IntelliJ Idea was the tool we used with java language.\
+• link to github repo https://github.com/mariedabee/Program.git 
 • Each team member has choose one creational design pattern, one structural design pattern, and one behavioural design pattern.\
 • When we had an issue or were done with our pattern, we had a call on teams and walked the other team member through the implemented pattern.\
 • We also created UML  Class diagrams for each pattern (in read me file under code explanation).
